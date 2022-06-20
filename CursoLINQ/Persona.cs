@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CursoLINQ
 {
-    [DebuggerDisplay("{Nombre}")]
+    [DebuggerDisplay("{Nombre}")] // Nos va a ayudar en modo debugging
     public class Persona
     {
         public string Nombre { get; set; }

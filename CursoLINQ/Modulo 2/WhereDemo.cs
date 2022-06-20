@@ -20,7 +20,7 @@ namespace CursoLINQ.Modulo_2
             //    Console.WriteLine(numero);
             //}
 
-            // Sintaxis de métodos 
+            // Sintaxis de métodos o sintaxis lambda
             var numerosImparesMayoresQue10 = numeros.Where(n => n % 2 == 1 && n > 10).ToList();
 
             // Sintaxis de query
