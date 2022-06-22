@@ -11,11 +11,11 @@ namespace CursoLINQ.Modulo_4
         public void Ejemplo()
         {
             var personas = new List<Persona>() {
-new Persona { Nombre = "Eduardo", Telefonos = { "123-456", "789-852" } },
-new Persona { Nombre = "Nidia", Telefonos = { "998-478", "568-222" } },
-new Persona { Nombre = "Alejandro", Telefonos = { "712-132" } },
-new Persona { Nombre = "Valentina" }
-};
+                new Persona { Nombre = "Eduardo", Telefonos = { "123-456", "789-852" } },
+                new Persona { Nombre = "Nidia", Telefonos = { "998-478", "568-222" } },
+                new Persona { Nombre = "Alejandro", Telefonos = { "712-132" } },
+                new Persona { Nombre = "Valentina" }
+            };
 
             var telefonos = personas.SelectMany(x => x.Telefonos).ToList();
 

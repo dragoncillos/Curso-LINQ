@@ -1,27 +1,20 @@
 ﻿using CursoLINQ;
 using CursoLINQ.Modulo_2;
 
-/*
-Sección 3: Ordenando Elementos
-Function OrderBy
-*/
-
-
 var personas = new List<Persona>() {
-    new Persona { Nombre = "Eduardo", Edad = 30, FechaIngresoALaEmpresa = new DateTime(2021, 1, 2), Soltero = true },
-    new Persona { Nombre = "Nidia", Edad = 19, FechaIngresoALaEmpresa = new DateTime(2015, 11, 22), Soltero = true },
-    new Persona { Nombre = "Alejandro", Edad = 45, FechaIngresoALaEmpresa = new DateTime(2020, 4, 12), Soltero = false },
-    new Persona { Nombre = "Valentina", Edad = 24, FechaIngresoALaEmpresa = new DateTime(2021, 7, 8), Soltero = false },
-    new Persona { Nombre = "Roberto", Edad = 61, FechaIngresoALaEmpresa = DateTime.Now.AddDays(-1), Soltero = false },
-    };
+    new Persona { Nombre = "Eduardo", EmpresaId = 1, },
+    new Persona { Nombre = "Nidia",  EmpresaId = 1 },
+    new Persona { Nombre = "Alejandro", EmpresaId = 3 },
+    new Persona { Nombre = "Valentina",  EmpresaId = 2 },
+    new Persona { Nombre = "Roberto",  EmpresaId = 3 },
+    new Persona { Nombre = "Eugenia"},
+    new Persona { Nombre = "Esmerlin", EmpresaId = 3 }
+};
 
-var ordenarPorEdad = personas.OrderBy(p => p.Edad);
+var empresas = new List<Empresa>(){
+    new Empresa{Id = 1, Nombre = "Electrodomésticos Felipe"},
+    new Empresa{Id = 2, Nombre = "Bicicletas Valentina"},
+    new Empresa{Id = 3, Nombre = "Gimnasio Esmerlin"}
+};
 
-var ordenarPorEdad2 = from p in personas orderby p.Edad select p;
-
-int[] numeros = { 4, 5, 1, 0, 44, 2 };
-
-foreach(var numero in numeros.OrderBy(x => x))
-{
-    Console.WriteLine(numero);
-}
+var a = 1;
